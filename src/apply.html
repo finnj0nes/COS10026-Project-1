@@ -7,10 +7,131 @@
   <meta name="description" content="Application Form" />
   <meta name="keywords" content="Form, Application, Job, Businessk" />
   <meta name="author" content="Aaron" />
-  <title>Rotating Phish Job Application</title>
+  <title>Apply at Rotating Phish</title>
 </head>
 </head>
+
 <body>
+    <!-- this is just a temporary photo of a fish. he is big but he is not stylish -->
+    <img src="Images/koi_temp.jpg" alt="Temporary Fish" title="Temp Fish">
+    <h1>So you want to work at Rotating Phish?</h1>
+    <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
+    <br> Please fill out and submit our application form below
+    </p>
+
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+        <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
+        <p>
+        <label for="reference_number">Job Reference Number</label>
+        <input type="text" name="reference_number" id="reference_number" required="required" pattern="\d{5}">
+        </p>
+
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+            <label for="given_name">First Name</label>
+            <input type="text" name="first" id="first_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20">
+            <label for="last">Last Name</label>
+            <input type="text" name="last_name" id="last_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20">
+            </p>
+
+            <p>
+            <label for="dob">Date of Birth</label>
+            <input type="text" id="dob" name="dob" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}" placeholder="dd/mm/yyyy">
+            </p>
+            
+            <fieldset>
+                <legend>Gender</legend>
+                <p> 
+                <input type="radio" id="male" name="gender" value="male" required="required"/>
+                <label for="male">Male</label> 
+                <input type="radio" id="female" name="gender" value="female"/>
+                <label for="female">Female</label>              
+                <input type="radio" id="non-binary" name="gender" value="non-binary"/>
+                <label for="non-binary">Non-binary</label>
+                <input type="radio" id="genderfluid" name="gender" value="genderfluid"/>
+                <label for="genderfluid">Genderfluid</label> 
+                <input type="radio" id="other" name="gender" value="other"/>
+                <label for="other">Other</label> 
+                </p>
+            </fieldset>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p>
+            <label for="given_name">Street Address</label>
+            <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
+            <label for="last">Suburb/Town</label>
+            <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40">
+            
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="ACT">ACT</option>
+                <option value="NT">NT</option>
+            </select>
+            </p>
+
+            <p>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required="required" placeholder="example@email.com">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone" required="required" placeholder="0303 030 030" pattern="[0-9 ]+" minlength="8" maxlength="12">
+            </p>
+
+         </fieldset>
+
+         <fieldset>
+            <legend>Skill list</legend>
+            <p>
+                <!-- I still have to come up with skills -->
+            <label for="skill1">Skill1</label>
+            <input type="checkbox" id="skill1" name="skills[]" value="skill1" required="required" 
+            <label for="skill2">Skill2</label>
+            <input type="checkbox" id="skill2" name="skills[]" value="skill2" 
+            <label for="skill3">Skill3</label> 
+            <input type="checkbox" id="skill3" name="skills[]" value="skill3"  
+            <label for="other_skills">Other skills...</label>
+            <input type="checkbox" id="other_skills" name="skills[]" value="other_skills"  
+            </p>
+
+            <!-- this needs fixing too -->
+            <p>
+            <label for="other_skills_desc">Other skills</label>
+            <br>
+            <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" required="required" rows="30" cols="30"></textarea>
+            </p>
+
+         </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <input type="submit" value="Book" />
+        <input type="reset" value="Reset Form" />
+
+    </form>
+    
     
 </body>
 </html>
