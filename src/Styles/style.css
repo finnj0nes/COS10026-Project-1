@@ -1,1 +1,24 @@
 /* style.css */
+
+/* Universal CSS */
+* {
+    font-family: sans-serif;
+}
+
+
+nav a{
+    text-decoration: none;
+    padding: 0.3em 2em
+}
+
+
+nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    background-color: orange;
+    color:white;
+}
+
+
