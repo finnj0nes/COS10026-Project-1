@@ -7,12 +7,12 @@
 
 header {
     background-color: black;
-    padding: 5%;
+    padding: 2%;
 }
 
 nav a {
     text-decoration: none;
-    padding: 5%;
+    padding: 2%;
     color: #E06F1F;
     font-size: 1.5em;
 }
@@ -25,8 +25,11 @@ nav a:visited{
 nav a:hover{
     background-color: #E06F1F;
     color:white;
-    padding: 5%;
+    padding: 2%;
 }
 
 
-
+.active{
+    background-color: #E06F1F;
+    color:white;
+}
