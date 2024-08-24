@@ -14,22 +14,33 @@
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Positions</a>
-            <a class="active" href="apply.html">Apply</a>
-            <a href="about.html">About Us</a>
-        </nav>
+      <img src="images/banner.jpg" alt="fish banner" title="fish banner">
+      <h1>Rotating Phish</h1>
     </header>
 
+  
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Positions</a>
+        <a class="active" href="apply.html">Apply</a>
+        <a href="about.html">About Us</a>
+    </nav>
 
-    <!-- this is just a temporary photo of a fish. he is big but he is not stylish -->
-    <img src="Images/koi_temp.jpg" alt="Temporary Fish" title="Temp Fish">
+    <aside>
+        <h1> Aside section </h1>
+        <p>We could put many things here</p>
+        <img src="images/koi_temp.jpg" alt="fish" title="fish">
+            
+        </aside>
+
+    <article>
     <h1>So you want to work at Rotating Phish?</h1>
     <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
     <br> Please fill out and submit our application form below
     </p>
+
+    <section>
 
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
@@ -38,8 +49,8 @@
         <input type="text" name="reference_number" id="reference_number" required="required" pattern="\d{5}">
         </p>
 
-
-        <fieldset>
+        
+        <fieldset id="personal_details">
             <legend>Personal Details</legend>
             <p>
             <label for="given_name">First Name</label>
@@ -70,7 +81,7 @@
             </fieldset>
         </fieldset>
         
-        <fieldset>
+        <fieldset id="contact_information">
             <legend>Contact Information</legend>
             <p>
             <label for="given_name">Street Address</label>
@@ -100,7 +111,7 @@
 
          </fieldset>
 
-         <fieldset>
+         <fieldset id="skills">
             <legend>Skill list</legend>
             <p>
                 <!-- I still have to come up with skills -->
@@ -129,21 +140,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
         <input type="submit" value="Book" />
         <input type="reset" value="Reset Form" />
 
     </form>
+
+    </section>
+    </article>
     
-    
+    <footer>
+        <hr>
+        <p>&copy; 2024 Rotating Phish. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

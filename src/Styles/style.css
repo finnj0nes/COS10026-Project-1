@@ -5,7 +5,32 @@
     font-family: sans-serif;
 }
 
-header {
+header h1 {
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    
+}
+
+h2 {
+    color: #E06F1F;
+}
+
+h3 {
+    color: black;
+}
+
+body {
+    background-color: #898b89;
+}
+
+body p {
+    color: #645138;
+}
+
+nav {
     background-color: black;
     padding: 2%;
 }
@@ -28,8 +53,21 @@ nav a:hover{
     padding: 2%;
 }
 
+fieldset {
+    border-color: black;
+}
+
+
+#personal_details, #contact_information, #skills {
+    width: 50%;
+}
 
 .active{
     background-color: #E06F1F;
     color:white;
+}
+
+
+aside {
+    float: right;
 }
