@@ -5,6 +5,13 @@
     font-family: sans-serif;
 }
 
+/* #home{
+    background-image: url(images/koi2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
+
+
 header h1 {
     text-align: center;
 }
@@ -71,3 +78,4 @@ fieldset {
 aside {
     float: right;
 }
+
