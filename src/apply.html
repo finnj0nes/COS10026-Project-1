@@ -3,22 +3,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Application Form" />
-  <meta name="keywords" content="Form, Application, Job, Businessk" />
-  <meta name="author" content="Aaron" />
+  <meta charset="utf-8">
+  <meta name="description" content="Application Form">
+  <meta name="keywords" content="Form, Application, Job, Businessk">
+  <meta name="author" content="Aaron">
   <link rel="stylesheet" href="styles/style.css">
   <title>Apply at Rotating Phish</title>
 </head>
 </head>
 
 <body>
+    <!-- because we have multiple pages, should this be a more specific header id tag? -->
+    <section id="header">
     <header>
       <img src="images/banner.jpg" alt="fish banner" title="fish banner">
       <h1>Rotating Phish</h1>
     </header>
-
-  
 
     <nav>
         <a href="index.html">Home</a>
@@ -27,21 +27,24 @@
         <a href="about.html">About Us</a>
     </nav>
 
+    </section>
+
+    <section id="aside">
     <aside>
         <h1> Aside section </h1>
         <p>We could put many things here</p>
         <p>Any questions? Need assisntance? Feel free to <a href="about.html">Contact us here</a></p>
         <img src="images/koi_temp.jpg" alt="fish" title="fish">
-            
-        </aside>
+    </aside>
+    </section>
 
-    <article>
+     <!-- because we have multiple pages, should this be a more specific main id tag? -->
+    <section id="main">
+
     <h1>So you want to work at Rotating Phish?</h1>
     <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
     <br> Please fill out and submit our application form below
     </p>
-
-    <section>
 
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
@@ -49,7 +52,6 @@
         <label for="reference_number">Job Reference Number</label>
         <input type="text" name="reference_number" id="reference_number" required="required" pattern="\d{5}">
         </p>
-
         
         <fieldset id="personal_details">
             <legend>Personal Details</legend>
@@ -134,25 +136,19 @@
             <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="50"></textarea>
             </p>
 
-         </fieldset>
-
-
-
-
-
-
+        </fieldset>
 
         <input type="submit" value="Book" />
         <input type="reset" value="Reset Form" />
 
     </form>
-
     </section>
-    </article>
     
+    <section id="footer">
     <footer>
         <hr>
         <p>&copy; 2024 Rotating Phish. All Rights Reserved.</p>
     </footer>
+    </section>
 </body>
 </html>
