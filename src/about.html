@@ -26,128 +26,150 @@
         </nav>
     </section>
 
-    <section id="aside">
-        <aside>
-            <h1> Aside section </h1>
-            <p>We could put many things here</p>
-            <p>Any questions? Need assisntance? Feel free to <a href="about.html">Contact us here</a></p>
+    <div id="content-wrapper">
+        <section id="about_main">
+            <h1>About Us</h1>
+            <section>
+                <h2>Group Details</h2>
+                <dl>
+                    <dt>Group Name:</dt>
+                    <dd>Rotating Phish</dd>
+                    <dt>Group ID:</dt>
+                    <dd>Group 2 (To confirm)</dd>
+                    <dt>Tutor's Name:</dt>
+                    <dd>Ati Kia</dd>
+                    <dt>Members and Contributions:</dt>
+                    <dd>
+                        <dl>
+                            <dt>Aaron Sutton</dt>
+                            <dd>Team Lead - Apply Page Development</dd>
+                            <dt>Alessia De Carlo</dt>
+                            <dd>Designer - Index Page Development</dd>
+                            <dt>James Chenco</dt>
+                            <dd>Jobs Page Development</dd>
+                            <dt>Finn Jones</dt>
+                            <dd>About Page Development</dd>
+                        </dl>
+                    </dd>
+                </dl>
+                
+                <h2>Group Timetable</h2>
+                <table>
+                    <caption>University Class Timetable</caption>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30 AM - 9:30 AM</td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2">EAT40006 Lab</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9:30 AM - 10:30 AM</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10:30 AM - 11:30 AM</td>
+                            <td></td>
+                            <td>EAT40006 Class</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:30 AM - 12:30 PM</td>
+                            <td>SWE40006 Lecture</td>
+                            <td>COS10026 Class</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:30 PM - 1:30 PM</td>
+                            <td colspan="5">Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td>1:30 PM - 2:30 PM</td>
+                            <td></td>
+                            <td rowspan="2">COS10026 Workshop</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2:30 PM - 3:30 PM</td>
+                            <td></td>
+                            <td>EAT40006 Seminar</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3:30 PM - 4:30 PM</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2">SWE40006 Class</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4:30 PM - 5:30 PM</td>
+                            <td>EAT40006 Client Call</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Email: <a href="mailto:102580274@student.swin.edu.au">102580274@student.swin.edu.au</a></p>
+            </section>
+        </section>
+
+        <section id="about-sidebar">
+            <h1>Learn More About Us</h1>
+            <div id="truth-lie">
+                <h2>Two Truths and a Lie</h2>
+                <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+                    <div class="truth-lie-option">
+                        <input type="radio" id="option1" name="truth_lie" value="option1" required="required">
+                        <label for="option1">Aaron Sutton once cycled across three countries in a week!</label>
+                    </div>
+                    
+                    <div class="truth-lie-option">
+                        <input type="radio" id="option2" name="truth_lie" value="option2">
+                        <label for="option2">Alessia De Carlo is a certified scuba diver.</label>
+                    </div>
+                    
+                    <div class="truth-lie-option">
+                        <input type="radio" id="option3" name="truth_lie" value="option3">
+                        <label for="option3">James Chenco has competed in international chess tournaments.</label>
+                    </div>
+    
+                    <input type="submit" value="Submit Your Guess">
+                </form>
+            </div>
+
             <figure>
                 <img id="teamphoto" src="images/group_photo.png" alt="Rotating Phish Group Photo">
                 <figcaption>Figure: Rotating Phish Group Photo</figcaption>
             </figure>
-        </aside>
-    </section>
-
-    <section id="about_main">
-        <h1>About Us</h1>
-        <section>
-            <h2>Group Details</h2>
-            <dl>
-                <dt>Group Name:</dt>
-                <dd>Rotating Phish</dd>
-                <dt>Group ID:</dt>
-                <dd>Group 2 (To confirm)</dd>
-                <dt>Tutor's Name:</dt>
-                <dd>Ati Kia</dd>
-                <dt>Members and Contributions:</dt>
-                <dd>
-                    <dl>
-                        <dt>Aaron Sutton</dt>
-                        <dd>Team Lead - Apply Page Development</dd>
-                        <dt>Alessia De Carlo</dt>
-                        <dd>Designer - Index Page Development</dd>
-                        <dt>James Chenco</dt>
-                        <dd>Jobs Page Development</dd>
-                        <dt>Finn Jones</dt>
-                        <dd>About Page Development</dd>
-                    </dl>
-                </dd>
-            </dl>
-            
-            <h2>Group Timetable</h2>
-            <table>
-                <caption>University Class Timetable</caption>
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>8:30 AM - 9:30 AM</td>
-                        <td></td>
-                        <td></td>
-                        <td rowspan="2">EAT40006 Lab</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>9:30 AM - 10:30 AM</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10:30 AM - 11:30 AM</td>
-                        <td></td>
-                        <td>EAT40006 Class</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11:30 AM - 12:30 PM</td>
-                        <td>SWE40006 Lecture</td>
-                        <td>COS10026 Class</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>12:30 PM - 1:30 PM</td>
-                        <td colspan="5">Lunch Break</td>
-                    </tr>
-                    <tr>
-                        <td>1:30 PM - 2:30 PM</td>
-                        <td></td>
-                        <td rowspan="2">COS10026 Workshop</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2:30 PM - 3:30 PM</td>
-                        <td></td>
-                        <td>EAT40006 Seminar</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>3:30 PM - 4:30 PM</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td rowspan="2">SWE40006 Class</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>4:30 PM - 5:30 PM</td>
-                        <td>EAT40006 Client Call</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Email: <a href="mailto:102580274@student.swin.edu.au">102580274@student.swin.edu.au</a></p>
         </section>
-    </section>
+    </div>
+
+    
 
     <section id="footer">
     <footer>
