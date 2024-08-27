@@ -34,8 +34,10 @@ body {
 }
 
 body p {
-    color: #645138;
+    color: #32210b;
 }
+
+
 
 nav {
     background-color: black;
@@ -75,6 +77,25 @@ fieldset {
 }
 
 
+
+
+#job1, #job2 {
+    background-color: #a3a8a3;
+    border: 4px solid rgb(136, 136, 136);
+    margin: 5px;
+    padding: 5px;
+}
+
+#job1:hover{
+    border: 4px solid rgb(0, 0, 0);
+}
+
+#job2:hover{
+    border: 4px solid rgb(0, 0, 0);
+
+}
+
+
 aside {
     float: right;
     text-align: center;
@@ -88,4 +109,3 @@ aside img {
 aside:hover {
     opacity: 50%;
 }
-
