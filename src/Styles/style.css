@@ -85,3 +85,7 @@ aside img {
     width: 25%;
 }
 
+aside:hover {
+    opacity: 50%;
+}
+
