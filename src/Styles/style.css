@@ -77,5 +77,11 @@ fieldset {
 
 aside {
     float: right;
+    text-align: center;
+}
+
+aside img {
+    border-radius: 50%;
+    width: 25%;
 }
 
