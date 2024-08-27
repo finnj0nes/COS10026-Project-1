@@ -110,7 +110,52 @@ aside:hover {
     opacity: 50%;
 }
 
+footer {
+    background-color: black;
+}
 
+footer p {
+    color: #E06F1F;
+}
+
+footer p:hover {
+    color: white;
+}
+
+#email {
+    color: #E06F1F;
+}
+
+#email:hover {
+    color: white;
+}
+
+#inspo {
+    color: #E06F1F;
+}
+
+#inspo:hover {
+    color: white;
+}
+
+footer p:first-child{
+    float: left;
+}
+
+footer p:nth-child(2){
+    text-align: center;
+}
+
+footer p:last-child{
+    text-align: center;
+}
+
+#logo{
+    float: right;
+    text-align: right;
+    width: 70px;
+    height: 70px;
+}
 
 
 
