@@ -29,30 +29,34 @@
     <div id="content-wrapper">
         <section id="about_main">
             <h1>About Us</h1>
-            <section>
-                <h2>Group Details</h2>
-                <dl>
-                    <dt>Group Name:</dt>
-                    <dd>Rotating Phish</dd>
-                    <dt>Group ID:</dt>
-                    <dd>Group 2 (To confirm)</dd>
-                    <dt>Tutor's Name:</dt>
-                    <dd>Ati Kia</dd>
-                    <dt>Members and Contributions:</dt>
-                    <dd>
-                        <dl>
-                            <dt>Aaron Sutton</dt>
-                            <dd>Team Lead - Apply Page Development</dd>
-                            <dt>Alessia De Carlo</dt>
-                            <dd>Designer - Index Page Development</dd>
-                            <dt>James Chenco</dt>
-                            <dd>Jobs Page Development</dd>
-                            <dt>Finn Jones</dt>
-                            <dd>About Page Development</dd>
-                        </dl>
-                    </dd>
-                </dl>
-                
+            <div class="group-details">
+                <div class="group-info">
+                    <h2>Group Details</h2>
+                    <dl>
+                        <dt>Group Name:</dt>
+                        <dd>Rotating Phish</dd>
+                        <dt>Group ID:</dt>
+                        <dd>Group 2</dd>
+                        <dt>Tutor's Name:</dt>
+                        <dd>Ati Kia</dd>
+                    </dl>
+                </div>
+                <div class="members-info">
+                    <h2>Members and Contributions:</h2>
+                    <dl>
+                        <dt>Aaron Sutton</dt>
+                        <dd>Team Lead - Apply Page Development</dd>
+                        <dt>Alessia De Carlo</dt>
+                        <dd>Designer - Index Page Development</dd>
+                        <dt>James Chenco</dt>
+                        <dd>Jobs Page Development</dd>
+                        <dt>Finn Jones</dt>
+                        <dd>About Page Development</dd>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="timetable">
                 <h2>Group Timetable</h2>
                 <table>
                     <caption>University Class Timetable</caption>
@@ -134,7 +138,8 @@
                         </tr>
                     </tbody>
                 </table>
-                <p>Email: <a href="mailto:102580274@student.swin.edu.au">102580274@student.swin.edu.au</a></p>
+            </div>    
+            <p id="about-email">Email: <a href="mailto:102580274@student.swin.edu.au">102580274@student.swin.edu.au</a></p>
             </section>
         </section>
 
@@ -143,20 +148,20 @@
             <div id="truth-lie">
                 <h2>Two Truths and a Lie</h2>
                 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-                    <div class="truth-lie-option">
-                        <input type="radio" id="option1" name="truth_lie" value="option1" required="required">
-                        <label for="option1">Aaron Sutton once cycled across three countries in a week!</label>
-                    </div>
+                    <label class="truth-lie-option">
+                        <input type="radio" id="option1" name="truth_lie" value="option1">
+                        Finn has his ears pierced.
+                    </label>
                     
-                    <div class="truth-lie-option">
+                    <label class="truth-lie-option">
                         <input type="radio" id="option2" name="truth_lie" value="option2">
-                        <label for="option2">Alessia De Carlo is a certified scuba diver.</label>
-                    </div>
+                        Alessia can juggle flaming sticks.
+                    </label>
                     
-                    <div class="truth-lie-option">
+                    <label class="truth-lie-option">
                         <input type="radio" id="option3" name="truth_lie" value="option3">
-                        <label for="option3">James Chenco has competed in international chess tournaments.</label>
-                    </div>
+                        Aaron also has his ears pierced.
+                    </label>
     
                     <input type="submit" value="Submit Your Guess">
                 </form>
