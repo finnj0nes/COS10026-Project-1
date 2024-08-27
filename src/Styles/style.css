@@ -138,22 +138,26 @@ footer p:hover {
     color: white;
 }
 
+footer p{
+    display: inline-block;
+    width: 33%;
+}
+
 footer p:first-child{
     float: left;
+    text-align: left;
 }
 
 footer p:nth-child(2){
+    float: center;
     text-align: center;
 }
 
-footer p:last-child{
-    text-align: center;
-}
-
-#logo{
+footer img:last-child{
     float: right;
     text-align: right;
     width: 70px;
     height: 70px;
 }
+
 
