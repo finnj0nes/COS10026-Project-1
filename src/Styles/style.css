@@ -76,9 +76,6 @@ fieldset {
     color:white;
 }
 
-
-
-
 #job1, #job2 {
     background-color: #a3a8a3;
     border: 4px solid rgb(136, 136, 136);
@@ -94,7 +91,6 @@ fieldset {
     border: 4px solid rgb(0, 0, 0);
 
 }
-
 
 aside {
     float: right;
@@ -120,6 +116,10 @@ footer p {
 
 footer p:hover {
     color: white;
+}
+
+#teamphoto {
+    border-radius: 0%;
 }
 
 #email {
