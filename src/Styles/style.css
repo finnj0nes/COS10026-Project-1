@@ -5,12 +5,6 @@
     font-family: sans-serif;
 }
 
-/* #home{
-    background-image: url(images/koi2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-} */
-
 
 header h1 {
     text-align: center;
@@ -38,7 +32,7 @@ body p {
 }
 
 
-
+/* nav css */
 nav {
     background-color: black;
     padding: 2%;
@@ -62,8 +56,61 @@ nav a:hover{
     padding: 2%;
 }
 
+.active{
+    background-color: #E06F1F;
+    color:white;
+}
+
+
+/* apply page CSS */
+#apply_header {
+    margin: 1%;
+}
+
+
+#job_menu {
+    padding: 1%;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 fieldset {
-    border-color: black;
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+fieldset:hover {
+    border: 3px solid rgb(94, 93, 93);
+}
+
+label {
+    margin: 5px;
+}
+
+.button {
+    height: 1.5em;
+    width: 10em;
+    font-size: 1.3em;
+    margin: 10px;
+    margin-left: 1%;
+}
+
+.button:hover {
+    background-color: #9c620a;
+}
+
+#apply_main {
+    background-color: #a3a8a3;
+    margin: 5px;
+    padding: 5px;
 }
 
 
@@ -71,11 +118,16 @@ fieldset {
     width: 50%;
 }
 
-.active{
-    background-color: #E06F1F;
-    color:white;
+#skillbox {
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
+
+
+
+/* Jobs page CSS */
 #job1, #job2 {
     background-color: #a3a8a3;
     border: 4px solid rgb(136, 136, 136);
@@ -92,9 +144,19 @@ fieldset {
 
 }
 
+
+
+/* CSS for aside  */
 aside {
+    color: #E06F1F;
     float: right;
     text-align: center;
+    margin: 2%;
+    padding: 2%;
+    width: 30%;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 50%;
 }
 
 aside img {
@@ -103,9 +165,21 @@ aside img {
 }
 
 aside:hover {
+    border: 3px solid rgb(49, 49, 49);
+
+}
+
+aside img:hover {
     opacity: 50%;
 }
 
+aside p {
+    color: white;
+}
+
+
+
+/* About page CSS */
 #content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -244,6 +318,12 @@ aside:hover {
     background-color: #f8d39c; 
 }
 
+#teamphoto {
+    width: 70%;
+}
+
+
+/* Footer CSS */
 footer {
     background-color: black;
 }
@@ -256,9 +336,6 @@ footer p:hover {
     color: white;
 }
 
-#teamphoto {
-    width: 70%;
-}
 
 #email {
     color: #E06F1F;

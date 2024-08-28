@@ -17,7 +17,6 @@
     <section id="header">
     <header>
       <img src="images/fishbanner_crop.gif" alt="fish banner" title="fish banner">
-      <h1>Rotating Phish</h1>
     </header>
 
     <nav>
@@ -32,26 +31,32 @@
 
     <section id="aside">
     <aside>
-        <h1> Aside section </h1>
-        <p>We could put many things here</p>
-        <p>Any questions? Need assisntance? Feel free to <a href="about.html">Contact us here</a></p>
-        <img src="images/koi_temp.jpg" alt="fish" title="fish">
+        <h1>Any questions?</h1>
+        <p>Need assistance? Want to reach out to us? Feel free to check out our About Page via the Rotating Phish below!</a></p>
+        <a href="about.html"> <img src="images/logo.gif" alt="fish" title="fish"> </a>
     </aside>
     </section>
 
      <!-- because we have multiple pages, should this be a more specific main id tag? -->
     <section id="apply_main">
 
+    <div id="apply_header">
     <h1>So you want to work at Rotating Phish?</h1>
     <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
     <br> Please fill out and submit our application form below
+    <br> <br>
     </p>
+    </div>
 
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
-        <p>
-        <label for="reference_number">Job Reference Number</label>
-        <input type="text" name="reference_number" id="reference_number" required="required" pattern="\d{5}">
+        <p id="job_menu">
+            <label for="job_title">Job Title</label>
+            <select name="job_title" id="job_title" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="software_architect">Software Architect</option>
+                <option value="full_stack_dev">Full Stack Developer</option>
+            </select>
         </p>
         
         <fieldset id="personal_details">
@@ -91,7 +96,7 @@
             <label for="given_name">Street Address</label>
             <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
             <label for="last">Suburb/Town</label>
-            <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40">
+            <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="Suburb">
             
             <label for="state">State</label>
             <select name="state" id="state" required>
@@ -107,8 +112,8 @@
             </p>
 
             <p>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required="required" placeholder="example@email.com">
+            <label for="email_address">Email Address</label>
+            <input type="email" id="email_address" name="email_address" required="required" placeholder="example@email.com">
             <label for="phone">Phone number</label>
             <input type="text" id="phone" name="phone" required="required" placeholder="0303 030 030" pattern="[0-9 ]+" minlength="8" maxlength="12">
             </p>
@@ -118,20 +123,23 @@
          <fieldset id="skills">
             <legend>Skill list</legend>
             <p>
-                <!-- I still have to come up with skills -->
             <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
             <label for="skill1">Hard-working</label>
             <input type="checkbox" id="skill2" name="skills[]" value="productive" required="required">
             <label for="skill2">Productive</label>
             <input type="checkbox" id="skill3" name="skills[]" value="idea_driven" required="required">
             <label for="skill3">Idea-driven</label> 
+            <input type="checkbox" id="skill4" name="skills[]" value="collaborative" required="required">
+            <label for="skill4">Collaborative</label> 
+            <input type="checkbox" id="skill5" name="skills[]" value="function_under_pressure" required="required">
+            <label for="skill5">Function well under pressure</label> 
             <input type="checkbox" id="other_skills" name="skills[]" value="other_skills" >
             <label for="other_skills">Other skills...</label>
             
             </p>
 
             <!-- this needs fixing too -->
-            <p>
+            <p id="skillbox">
             <label for="other_skills_desc">Other skills</label>
             <br>
             <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="50"></textarea>
@@ -139,8 +147,9 @@
 
         </fieldset>
 
-        <input type="submit" value="Book" />
-        <input type="reset" value="Reset Form" />
+        <input type="submit" value="Book" class="button"/>
+        <input type="reset" value="Reset Form" class="button"/>
+        
 
     </form>
     </section>
