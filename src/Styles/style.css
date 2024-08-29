@@ -95,6 +95,10 @@ label {
     margin: 5px;
 }
 
+form div {
+    padding: 1%;
+}
+
 .button {
     height: 1.5em;
     width: 10em;
@@ -118,8 +122,9 @@ label {
     width: 50%;
 }
 
+
 #skillbox {
-    margin-top: 5%;
+    margin-top: 3%;
     font-weight: bold;
     font-size: 1.1em;
 }

@@ -15,143 +15,143 @@
 <body>
     <!-- because we have multiple pages, should this be a more specific header id tag? -->
     <section id="header">
-    <header>
-      <img src="images/fishbanner_crop.gif" alt="fish banner" title="fish banner">
-    </header>
+        <header>
+        <img src="images/fishbanner_crop.gif" alt="fish banner" title="fish banner">
+        </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="jobs.html">Positions</a>
-        <a href="about.html">About Us</a>
-        <a href="enhancements.html">Enhancements</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="jobs.html">Positions</a>
+            <a href="about.html">About Us</a>
+            <a href="enhancements.html">Enhancements</a>
 
-    </nav>
+        </nav>
 
-    </section>
+        </section>
 
-    <section id="aside">
-    <aside>
-        <h1>Any questions?</h1>
-        <p>Need assistance? Want to reach out to us? Feel free to check out our About Page via the Rotating Phish below!</a></p>
-        <a href="about.html"> <img src="images/logo.gif" alt="fish" title="fish"> </a>
-    </aside>
+        <section id="aside">
+        <aside>
+            <h1>Any questions?</h1>
+            <p>Need assistance? Want to reach out to us? Feel free to check out our About Page via the Rotating Phish below!</a></p>
+            <a href="about.html"> <img src="images/logo.gif" alt="fish" title="fish"> </a>
+        </aside>
     </section>
 
      <!-- because we have multiple pages, should this be a more specific main id tag? -->
     <section id="apply_main">
 
-    <div id="apply_header">
-    <h1>So you want to work at Rotating Phish?</h1>
-    <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
-    <br> Please fill out and submit our application form below
-    <br> <br>
-    </p>
-    </div>
-
-    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-        <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
-        <p id="job_menu">
-            <label for="job_title">Job Title</label>
-            <select name="job_title" id="job_title" required>
-                <option value="" selected disabled>Please select</option>
-                <option value="software_architect">Software Architect</option>
-                <option value="full_stack_dev">Full Stack Developer</option>
-            </select>
-        </p>
-        
-        <fieldset id="personal_details">
-            <legend>Personal Details</legend>
-            <p>
-            <label for="given_name">First Name</label>
-            <input type="text" name="first" id="first_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20">
-            <label for="last">Last Name</label>
-            <input type="text" name="last_name" id="last_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20">
+        <div id="apply_header">
+            <h1>So you want to work at Rotating Phish?</h1>
+            <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
+            <br> Please fill out and submit our application form below
+            <br> <br>
             </p>
+        </div>
 
-            <p>
-            <label for="dob">Date of Birth</label>
-            <input type="text" id="dob" name="dob" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}" placeholder="dd/mm/yyyy">
-            </p>
+        <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+            <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
+            <div id="job_menu">
+                <label for="job_title">Job Title</label>
+                <select name="job_title" id="job_title" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="software_architect">Software Architect</option>
+                    <option value="full_stack_dev">Full Stack Developer</option>
+                </select>
+            </div>
             
-            <fieldset>
-                <legend>Gender</legend>
-                <p> 
-                <input type="radio" id="male" name="gender" value="male" required="required"/>
-                <label for="male">Male</label> 
-                <input type="radio" id="female" name="gender" value="female"/>
-                <label for="female">Female</label>              
-                <input type="radio" id="non-binary" name="gender" value="non-binary"/>
-                <label for="non-binary">Non-binary</label>
-                <input type="radio" id="genderfluid" name="gender" value="genderfluid"/>
-                <label for="genderfluid">Genderfluid</label> 
-                <input type="radio" id="other" name="gender" value="other"/>
-                <label for="other">Other</label> 
-                </p>
+            <fieldset id="personal_details">
+                <legend>Personal Details</legend>
+                <div>
+                <label for="given_name">First Name</label>
+                <input type="text" name="first" id="first_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20">
+                <label for="last">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20">
+                </div>
+
+                <div>
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" name="dob" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}" placeholder="dd/mm/yyyy">
+                </div>
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    <div> 
+                    <input type="radio" id="male" name="gender" value="male" required="required"/>
+                    <label for="male">Male</label> 
+                    <input type="radio" id="female" name="gender" value="female"/>
+                    <label for="female">Female</label>              
+                    <input type="radio" id="non-binary" name="gender" value="non-binary"/>
+                    <label for="non-binary">Non-binary</label>
+                    <input type="radio" id="genderfluid" name="gender" value="genderfluid"/>
+                    <label for="genderfluid">Genderfluid</label> 
+                    <input type="radio" id="other" name="gender" value="other"/>
+                    <label for="other">Other</label> 
+                    </div>
+                </fieldset>
             </fieldset>
-        </fieldset>
-        
-        <fieldset id="contact_information">
-            <legend>Contact Information</legend>
-            <p>
-            <label for="given_name">Street Address</label>
-            <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
-            <label for="last">Suburb/Town</label>
-            <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="Suburb">
             
-            <label for="state">State</label>
-            <select name="state" id="state" required>
-                <option value="" selected disabled>Please select</option>
-                <option value="VIC">VIC</option>
-                <option value="NSW">NSW</option>
-                <option value="QLD">QLD</option>
-                <option value="WA">WA</option>
-                <option value="SA">SA</option>
-                <option value="ACT">ACT</option>
-                <option value="NT">NT</option>
-            </select>
-            </p>
+            <fieldset id="contact_information">
+                <legend>Contact Information</legend>
+                <div>
+                <label for="given_name">Street Address</label>
+                <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
+                <label for="last">Suburb/Town</label>
+                <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="Suburb">
+                
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="ACT">ACT</option>
+                    <option value="NT">NT</option>
+                </select>
+            </div>
 
-            <p>
-            <label for="email_address">Email Address</label>
-            <input type="email" id="email_address" name="email_address" required="required" placeholder="example@email.com">
-            <label for="phone">Phone number</label>
-            <input type="text" id="phone" name="phone" required="required" placeholder="0303 030 030" pattern="[0-9 ]+" minlength="8" maxlength="12">
-            </p>
+                <div>
+                <label for="email_address">Email Address</label>
+                <input type="email" id="email_address" name="email_address" required="required" placeholder="example@email.com">
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone" required="required" placeholder="0303 030 030" pattern="[0-9 ]+" minlength="8" maxlength="12">
+                </div>
 
-         </fieldset>
+            </fieldset>
 
-         <fieldset id="skills">
-            <legend>Skill list</legend>
-            <p>
-            <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
-            <label for="skill1">Hard-working</label>
-            <input type="checkbox" id="skill2" name="skills[]" value="productive" required="required">
-            <label for="skill2">Productive</label>
-            <input type="checkbox" id="skill3" name="skills[]" value="idea_driven" required="required">
-            <label for="skill3">Idea-driven</label> 
-            <input type="checkbox" id="skill4" name="skills[]" value="collaborative" required="required">
-            <label for="skill4">Collaborative</label> 
-            <input type="checkbox" id="skill5" name="skills[]" value="function_under_pressure" required="required">
-            <label for="skill5">Function well under pressure</label> 
-            <input type="checkbox" id="other_skills" name="skills[]" value="other_skills" >
-            <label for="other_skills">Other skills...</label>
+            <fieldset id="skills">
+                <legend>Skill list</legend>
+                <div>
+                <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
+                <label for="skill1">Hard-working</label>
+                <input type="checkbox" id="skill2" name="skills[]" value="productive" required="required">
+                <label for="skill2">Productive</label>
+                <input type="checkbox" id="skill3" name="skills[]" value="idea_driven" required="required">
+                <label for="skill3">Idea-driven</label> 
+                <input type="checkbox" id="skill4" name="skills[]" value="collaborative" required="required">
+                <label for="skill4">Collaborative</label> 
+                <input type="checkbox" id="skill5" name="skills[]" value="function_under_pressure" required="required">
+                <label for="skill5">Function well under pressure</label> 
+                <input type="checkbox" id="other_skills" name="skills[]" value="other_skills" >
+                <label for="other_skills">Other skills...</label>
+                
+                </div>
+
+                <!-- this needs fixing too -->
+                <div id="skillbox">
+                <label for="other_skills_desc">Other skills</label>
+                <br>
+                <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="50"></textarea>
+                </div>
+
+            </fieldset>
+
+            <input type="submit" value="Book" class="button"/>
+            <input type="reset" value="Reset Form" class="button"/>
             
-            </p>
 
-            <!-- this needs fixing too -->
-            <p id="skillbox">
-            <label for="other_skills_desc">Other skills</label>
-            <br>
-            <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="50"></textarea>
-            </p>
-
-        </fieldset>
-
-        <input type="submit" value="Book" class="button"/>
-        <input type="reset" value="Reset Form" class="button"/>
-        
-
-    </form>
+        </form>
     </section>
     
     <section id="footer">
