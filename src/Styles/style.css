@@ -108,8 +108,10 @@ form div {
 }
 
 .button:hover {
-    background-color: #9c620a;
+    background-color: #E06F1F;
+    font-weight: bold;
 }
+
 
 #apply_main {
     background-color: #a3a8a3;
@@ -170,7 +172,7 @@ aside img {
 }
 
 aside:hover {
-    border: 3px solid rgb(49, 49, 49);
+    border: 3px solid #E06F1F;
 
 }
 
