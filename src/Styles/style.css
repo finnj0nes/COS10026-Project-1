@@ -92,6 +92,8 @@ nav a:hover{
     font-size: 1.1em;
 }
 
+
+
 /* Fieldset legend text */
 legend {
     font-weight: bold;
@@ -120,6 +122,20 @@ form div {
     padding: 1%;
 }
 
+/* Label wrapper, used to keep labels and their input boxes aligned, ensuring they dont overflow to a new line when changing screen size */
+.labels {
+    display: flex;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+
+/* spacing between input boxes */
+.labels input {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
 
 /* CSS for reset and submit buttons */
 .button {
@@ -138,11 +154,16 @@ form div {
 
 /* css for other skills textbox */
 #skillbox {
-    margin-top: 3%;
+    margin-top: 1%;
     font-weight: bold;
     font-size: 1.1em;
 }
 
+/* removing the blue outline when in focus, and disabling the resize grabber */
+textarea {
+    outline: none;
+    resize: none;
+}
 
 
 
