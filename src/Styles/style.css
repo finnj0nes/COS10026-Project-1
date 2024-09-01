@@ -63,11 +63,28 @@ nav a:hover{
 
 
 /* apply page CSS */
-#apply_header {
+
+/* Title and intro paragraph */
+#apply_title {
     margin: 1%;
 }
 
+/* css for everything in the main section */
+#apply_main {
+    background-color: #a3a8a3;
+    margin: 5px;
+    padding: 5px;
+}
 
+
+
+/* main fieldset group sizing */
+#personal_details, #contact_information, #skills {
+    width: 50%;
+}
+
+
+/* Initial dropdown menu */
 #job_menu {
     padding: 1%;
     color: black;
@@ -75,11 +92,13 @@ nav a:hover{
     font-size: 1.1em;
 }
 
+/* Fieldset legend text */
 legend {
     font-weight: bold;
     font-size: 1.1em;
 }
 
+/* Giving each fieldset a border and margin/padding */
 fieldset {
     border: 3px solid rgb(49, 49, 49);
     border-radius: 10px;
@@ -91,14 +110,18 @@ fieldset:hover {
     border: 3px solid rgb(94, 93, 93);
 }
 
+/* Spacing out the labels */
 label {
     margin: 5px;
 }
 
+/* spacing out elements in divs */
 form div {
     padding: 1%;
 }
 
+
+/* CSS for reset and submit buttons */
 .button {
     height: 1.5em;
     width: 10em;
@@ -113,18 +136,7 @@ form div {
 }
 
 
-#apply_main {
-    background-color: #a3a8a3;
-    margin: 5px;
-    padding: 5px;
-}
-
-
-#personal_details, #contact_information, #skills {
-    width: 50%;
-}
-
-
+/* css for other skills textbox */
 #skillbox {
     margin-top: 3%;
     font-weight: bold;

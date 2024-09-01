@@ -8,6 +8,7 @@
   <meta name="keywords" content="Form, Application, Job, Businessk">
   <meta name="author" content="Aaron">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
   <title>Apply at Rotating Phish</title>
 </head>
 </head>
@@ -40,7 +41,7 @@
      <!-- because we have multiple pages, should this be a more specific main id tag? -->
     <section id="apply_main">
 
-        <div id="apply_header">
+        <div id="apply_title">
             <h1>So you want to work at Rotating Phish?</h1>
             <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
             <br> Please fill out and submit our application form below
@@ -61,21 +62,21 @@
             
             <fieldset id="personal_details">
                 <legend>Personal Details</legend>
-                <div>
+                <div class="labels">
                 <label for="given_name">First Name</label>
                 <input type="text" name="first" id="first_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20" placeholder="Tate">
                 <label for="last">Last Name</label>
                 <input type="text" name="last_name" id="last_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20" placeholder="N. Phish">
                 </div>
 
-                <div>
+                <div class="labels">
                 <label for="dob">Date of Birth</label>
                 <input type="text" id="dob" name="dob" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}" placeholder="dd/mm/yyyy">
                 </div>
                 
                 <fieldset>
                     <legend>Gender</legend>
-                    <div> 
+                    <div class="labels"> 
                     <input type="radio" id="male" name="gender" value="male" required="required"/>
                     <label for="male">Male</label> 
                     <input type="radio" id="female" name="gender" value="female"/>
@@ -92,7 +93,7 @@
             
             <fieldset id="contact_information">
                 <legend>Contact Information</legend>
-                <div>
+                <div class="labels">
                 <label for="given_name">Street Address</label>
                 <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
                 <label for="last">Suburb/Town</label>
@@ -111,7 +112,7 @@
                 </select>
             </div>
 
-                <div>
+                <div class="labels">
                 <label for="email_address">Email Address</label>
                 <input type="email" id="email_address" name="email_address" required="required" placeholder="example@email.com">
                 <label for="phone">Phone number</label>
@@ -122,7 +123,7 @@
 
             <fieldset id="skills">
                 <legend>Skill list</legend>
-                <div>
+                <div class="labels">
                 <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
                 <label for="skill1">Hard-working</label>
                 <input type="checkbox" id="skill2" name="skills[]" value="productive" required="required">
@@ -131,8 +132,6 @@
                 <label for="skill3">Idea-driven</label> 
                 <input type="checkbox" id="skill4" name="skills[]" value="collaborative" required="required">
                 <label for="skill4">Collaborative</label> 
-                <input type="checkbox" id="skill5" name="skills[]" value="function_under_pressure" required="required">
-                <label for="skill5">Function well under pressure</label> 
                 <input type="checkbox" id="other_skills" name="skills[]" value="other_skills" >
                 <label for="other_skills">Other skills...</label>
                 
@@ -142,7 +141,7 @@
                 <div id="skillbox">
                 <label for="other_skills_desc">Other skills</label>
                 <br>
-                <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="50"></textarea>
+                <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="40"></textarea>
                 </div>
 
             </fieldset>
