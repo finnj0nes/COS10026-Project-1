@@ -279,6 +279,12 @@ aside p {
     font-size: 1em;
 }
 
+/* Aligning the time column to the left & italics */
+.timetable td:first-child {
+    text-align: right;
+    font-style: italic;
+}
+
 #about-email {
     padding-left: 20px;
     font-weight: bold;
