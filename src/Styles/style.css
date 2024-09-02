@@ -364,10 +364,54 @@ aside p {
     background-color: #f8d39c; 
 }
 
-#teamphoto {
+.team-photo-container {
     width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
+#teamphoto {
+    width: 100%;
+    height: auto;
+}
+
+.area-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    z-index: 10;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Show tooltip on hover */
+area:hover + .area-tooltip {
+    display: block;
+}
+
+/* Specific positions for each tooltip */
+.tooltip-james {
+    top: 70%; /* Adjust based on the actual image */
+    left: 10%;
+}
+
+.tooltip-alessia {
+    top: 75%;
+    left: 40%;
+}
+
+.tooltip-aaron {
+    top: 70%;
+    left: 60%;
+}
+
+.tooltip-finn {
+    top: 65%;
+    left: 85%;
+}
 
 /* Footer CSS */
 footer {
