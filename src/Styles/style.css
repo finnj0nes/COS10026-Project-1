@@ -243,7 +243,7 @@ aside p {
 #content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; /* align top of page with group info */
 }
 
 #content-wrapper h1 { text-align: left;
@@ -251,14 +251,15 @@ aside p {
 }
 
 #about_main {
-    flex: 0 0 59%;
+    flex: 0 0 59%; /* first 59% of page width */
     background-color: #a3a8a3;
     border: 4px solid rgb(136, 136, 136);
     margin: 5px;
     padding: 5px;
 }
 
-.group-details {
+/* child elements will be side by side */
+#group-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -267,36 +268,35 @@ aside p {
     border-radius: 10px;
 }
 
-.group-info, .members-info {
+/* Split sections for group info and members */
+#group-info, #members-info {
     width: 48%;
 }
 
-.group-details dt {
+#group-details dt {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.group-details dd {
+#group-details dd {
     margin-left: 20px;
     margin-bottom: 15px;
 }
 
-.timetable {
-    
+#timetable {
     border: 3px solid rgb(49, 49, 49);
     border-radius: 10px;
     padding: 20px;
-    margin-top: 10px;
-    overflow-x: auto;
+    margin-top: 10px; /* Spaced from group info section */
     max-width: 100%;
 }
 
-.timetable table {
+#timetable table {
     width: 100%;
-    table-layout: fixed;
+    table-layout: fixed; /* Spaces columns out evenly */
 }
 
-.timetable caption {
+#timetable caption {
     caption-side: top;
     font-weight: bold;
     color: #1d1d1d; 
@@ -304,24 +304,24 @@ aside p {
     text-align: left;
 }
 
-.timetable th, .timetable td {
+#timetable th, #timetable td {
     border: 1px solid #1d1d1d;
     padding: 10px;
     text-align: center;
 }
 
-.timetable th {
+#timetable th {
     background-color: #bdbdbd;
     font-weight: bold;
 }
 
-.timetable td {
+#timetable td {
     background-color: #f5f5f5;
     font-size: 1em;
 }
 
 /* Aligning the time column to the left & italics */
-.timetable td:first-child {
+#timetable td:first-child {
     text-align: right;
     font-style: italic;
 }
@@ -333,8 +333,8 @@ aside p {
 
 #about-sidebar {
     text-align: center;
-    flex: 0 0 39%;
-    background-color: #a3a8a3;
+    flex: 0 0 39%; /* last 39% of page width */
+    background-color: #a3a8a3; 
     border: 4px solid rgb(136, 136, 136);
     margin: 5px;
     padding: 5px;
@@ -368,7 +368,7 @@ aside p {
     border: 2px solid #363636; 
     border-radius: 10px;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px 0; /* set vertical margin */
     display: block;
     align-items: center;
     cursor: pointer;
@@ -376,7 +376,7 @@ aside p {
 
 .truth-lie-option input[type="radio"] {
     float:left;
-    transform: scale(2);
+    transform: scale(2); /* enlarge radio button */
     margin-right: 15px;
 }
 
@@ -385,31 +385,28 @@ aside p {
 }
 
 .team-photo-container {
-    width: 70%;
+    width: 70%; 
     max-width: 100%;
-    margin: 0 auto;
-    position: relative;
+    margin: 0 auto; /* center the container */
+    position: relative; /* sets spacing for children */
 }
 
 #teamphoto {
-    width: 100%;
-    height: auto;
+    width: 100%; /* lock width of img */
 }
+
 
 .area-tooltip {
-    position: absolute;
+    position: absolute; /* relative to ancestor */
     background-color: black;
     color: white;
-    padding: 5px;
-    border-radius: 5px;
-    display: none;
-    z-index: 10;
-    white-space: nowrap;
+    padding: 5px; /* Text padding inside box */
+    border-radius: 5px; 
+    display: none; /* Hides tooltip by default */
 }
 
-/* Show tooltip on hover */
-area:hover + .area-tooltip {
-    display: block;
+area:hover + .area-tooltip { /* + is adjacent sibling combinator */
+    display: block; /* show the tooltip text */
 }
 
 /* Specific positions for each tooltip */
