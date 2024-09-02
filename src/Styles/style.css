@@ -378,13 +378,13 @@ aside p {
 
 .area-tooltip {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: black;
     color: white;
     padding: 5px;
     border-radius: 5px;
-    display: none; /* Hidden by default */
+    display: none;
     z-index: 10;
-    white-space: nowrap; /* Prevent line breaks */
+    white-space: nowrap; 
 }
 
 /* Show tooltip on hover */
@@ -394,23 +394,23 @@ area:hover + .area-tooltip {
 
 /* Specific positions for each tooltip */
 .tooltip-james {
-    top: 70%; /* Adjust based on the actual image */
-    left: 10%;
+    top: 70%; 
+    left: 5%;
 }
 
 .tooltip-alessia {
-    top: 75%;
-    left: 40%;
+    top: 79%;
+    left: 30%;
 }
 
 .tooltip-aaron {
-    top: 70%;
-    left: 60%;
+    top: 73%;
+    left: 50%;
 }
 
 .tooltip-finn {
     top: 65%;
-    left: 85%;
+    left: 75%;
 }
 
 /* Footer CSS */
