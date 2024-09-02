@@ -9,6 +9,7 @@
     <meta name="keywords" content="Rotating Phish, Job Search, Group Details, Team About Page">
     <title>About</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 
 <body>
@@ -18,10 +19,10 @@
         </header>
     
         <nav>
-            <a href="index.html">Home</a>
-            <a href="jobs.html">Positions</a>
-            <a class="active" href="about.html">About Us</a>
-            <a href="enhancements.html">Enhancements</a>
+            <a id="button" href="index.html">Home</a>
+            <a id="button" href="jobs.html">Positions</a>
+            <a id="button" class="active" href="about.html">About Us</a>
+            <a id="button" href="enhancements.html">Enhancements</a>
         </nav>
     </section>
 
@@ -35,7 +36,7 @@
                         <dt>Group Name:</dt>
                         <dd>Rotating Phish</dd>
                         <dt>Group ID:</dt>
-                        <dd>Group 2</dd>
+                        <dd>Rotating Phish (t-m)</dd>
                         <dt>Tutor's Name:</dt>
                         <dd>Ati Kia</dd>
                     </dl>
@@ -167,8 +168,12 @@
             </div>
 
             <figure>
-                <img id="teamphoto" src="images/group_photo.png" alt="Rotating Phish Group Photo">
+                <img id="teamphoto" src="images/group_photo.png" alt="Rotating Phish Group Photo" usemap="#group_photo_map">
                 <figcaption>Figure: Rotating Phish Group Photo</figcaption>
+
+                <map name="group_photo_map">
+                    <area shape="rect" coords="0,0,300,300" alt="Rotating Phish Group Photo" href="https://www.swin.edu.au/">
+                </map>
             </figure>
         </section>
     </div>
