@@ -404,7 +404,7 @@ aside p {
     border-radius: 5px;
     display: none;
     z-index: 10;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 /* Show tooltip on hover */
@@ -431,6 +431,25 @@ area:hover + .area-tooltip {
 .tooltip-finn {
     top: 65%;
     left: 75%;
+}
+
+/* Enhancements CSS*/
+#enhancements_main {
+    background-color: #a3a8a3;
+    border: 4px solid rgb(136, 136, 136);
+    margin: 5px;
+    padding: 5px;
+}
+
+
+#enhancements_main h1 { 
+    text-align: left;
+    padding-left: 20px;
+}
+
+#enhancements_main ol {
+    font-style: italic;
+    color: #32210b;
 }
 
 /* Footer CSS */
