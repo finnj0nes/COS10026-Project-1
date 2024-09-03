@@ -28,7 +28,7 @@ body {
 }
 
 body p {
-    color: #32210b;
+    color: #000000;
 }
 
 
@@ -208,7 +208,6 @@ textarea {
 
 /* CSS for aside  */
 aside {
-    color: #E06F1F;
     float: right;
     text-align: center;
     margin: 2%;
@@ -217,6 +216,10 @@ aside {
     background-color: black;
     border: 3px solid rgb(12, 12, 12);
     border-radius: 50%;
+}
+
+aside h2 {
+    color: #E06F1F;
 }
 
 aside img {
