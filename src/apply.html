@@ -8,14 +8,16 @@
   <meta name="keywords" content="Form, Application, Job, Businessk">
   <meta name="author" content="Aaron">
   <link rel="stylesheet" href="styles/style.css">
-  <title>Apply at Rotating Phish</title>
+  <title>Rotating Phish - Apply</title>
 </head>
 
 <body>
     
     <header id="header">
+    <!--fish banner-->
     <img src="images/fishbanner_crop.gif" alt="GIF banner featuring koi fish swimming through a pond" title="fish banner">
     
+    <!--page menu bar-->
     <nav>
         <a class="button" href="index.html">Home</a>
         <a class="button active" href="jobs.html">Positions</a>
@@ -26,8 +28,8 @@
     </header>
 
        
-
-    <aside id="aside">
+<!--section off to side displaying logo and link to about page-->
+    <aside>
         <h2>Any questions?</h2>
         <p>Need assistance? Want to reach out to us? Feel free to check out our About Page via the Rotating Phish below!</p>
         <a href="about.html"> <img src="images/logo.gif" alt="Rotating Phish logo: 3d cube with a fish inside" title="logo"> </a>
@@ -44,10 +46,13 @@
             </p>
         </div>
 
+        <!--application form for all jobs-->
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
             <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
-            <div id="job_menu">
+            <!--fixed error, wrapped labels in their own div for layout-->
+                <div id="job_menu">
                 <label for="job_title">Job Title</label>
+                <!--drop down menu for available jobs-->
                 <select name="job_title" id="job_title" required>
                     <option value="" selected disabled>Please select</option>
                     <option value="software_architect">Software Architect</option>
@@ -56,6 +61,7 @@
             </div>
             
             <fieldset id="personal_details">
+                <!--section to fill out personal details-->
                 <legend>Personal Details</legend>
                 <div class="labels">
                 <label for="first_name">First Name</label>
@@ -70,6 +76,7 @@
                 </div>
                 
                 <fieldset>
+                    <!--radio buttons for gender-->                   
                     <legend>Gender</legend>
                     <div class="labels"> 
                     <input type="radio" id="male" name="gender" value="male" required="required">
@@ -87,6 +94,7 @@
             </fieldset>
             
             <fieldset id="contact_information">
+                <!--inputs for contact info-->
                 <legend>Contact Information</legend>
                 <div class="labels">
                 <label for="street_address">Street Address</label>
@@ -118,6 +126,7 @@
 
             <fieldset id="skills">
                 <legend>Skill list</legend>
+                <!--check boxes for desireable skills-->
                 <div class="labels">
                 <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
                 <label for="skill1">Hard-working</label>
@@ -132,7 +141,7 @@
                 
                 </div>
 
-                <!-- this needs fixing too -->
+                <!-- text input for other skills -->
                 <div id="skillbox">
                 <label for="other_skills_desc">Other skills</label>
                 <br>
@@ -141,6 +150,7 @@
 
             </fieldset>
 
+            <!--form buttons to submit or reset form-->
             <input type="submit" value="Apply" class="form_button">
             <input type="reset" value="Reset Form" class="form_button">
             
@@ -149,6 +159,7 @@
     </section>
     
     <footer>
+        <!--universal footer-->
         <p><a id="inspo" href="Images/inspiration.jpg">Our Inspiration</a>
         <a id="email" href="mailto:rotatingphish@gmail.com">Email Us!</a></p>
         <p>&copy; 2024 Rotating Phish. All Rights Reserved.</p>
