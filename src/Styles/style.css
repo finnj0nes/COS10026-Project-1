@@ -64,15 +64,22 @@ nav a:hover{
 
 /* Nav bar transition effect */
 .button {
+    /* changes linear gradient from bottom to top, 50% percent of the gradient is black and 50% is transparent */
     background-image: linear-gradient(to top, transparent 50%, black 50%);
+    /* background is twice as high as it is wide */
     background-size: 100% 200%;
+    /* the position starts at the top right corner */
     background-position: 0% 0%;
     transition: 0.4s;
 }
 
 .button:hover {
+    /* when the button is hovered the text turns white */
     color: white;
+    /* the background position changes from the bottom left corner of the image */
     background-position: 0% 100%;
+}
+
 }
 
 /* what do we think about this?
