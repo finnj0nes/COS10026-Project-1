@@ -385,10 +385,10 @@ aside p {
 }
 
 .team-photo-container {
-    width: 70%; 
+    width: 100%; 
     max-width: 100%;
-    margin: 0 auto; /* center the container */
-    position: relative; /* sets spacing for children */
+    margin: 0 auto; 
+    position: relative; 
 }
 
 #teamphoto {
