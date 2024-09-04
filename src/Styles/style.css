@@ -23,6 +23,10 @@ h3 {
     color: black;
 }
 
+#home {
+    background-image: url("Images/background1.jpeg");
+}
+
 body {
     background-color: #898b89;
 }
