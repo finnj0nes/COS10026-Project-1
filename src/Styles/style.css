@@ -1,18 +1,8 @@
 /* style.css */
 
-/* Universal CSS */
+/* --------------------UNIVERSAL CSS-------------------- */
 * {
     font-family: sans-serif;
-}
-
-
-header h1 {
-    text-align: center;
-}
-
-header img {
-    width: 100%;
-    
 }
 
 h2 {
@@ -23,10 +13,6 @@ h3 {
     color: black;
 }
 
-#home {
-    background-image: url("images/background1.jpeg")
-}
-
 body {
     background-color: #898b89;
 }
@@ -35,8 +21,14 @@ body p {
     color: #000000;
 }
 
+/* --------------------HEADER CSS-------------------- */
+header img {
+    width: 100%;
+}
 
-/* nav css */
+
+
+/* --------------------NAV CSS-------------------- */
 nav {
     background-color: black;
     padding: 2%;
@@ -86,7 +78,92 @@ nav a:hover{
 
 
 
-/* apply page CSS */
+/* --------------------ASIDE CSS-------------------- */
+aside {
+    float: right;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+    width: 30%;
+    background-color: black;
+    border: 3px solid rgb(12, 12, 12);
+    border-radius: 50%;
+}
+
+aside h2 {
+    color: #E06F1F;
+}
+
+aside img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+aside:hover {
+    border: 3px solid #E06F1F;
+
+}
+
+aside img:hover {
+    opacity: 50%;
+}
+
+aside p {
+    color: white;
+}
+
+
+
+
+/* --------------------INDEX PAGE CSS-------------------- */
+#home {
+    background-image: url("images/background1.jpeg")
+}
+
+
+
+/* --------------------JOBS PAGE CSS-------------------- */
+#job1, #job2 {
+    background-color: #a3a8a3;
+    border: 4px solid rgb(136, 136, 136);
+    margin: 5px;
+    padding: 5px;
+}
+
+#job1:hover{
+    border: 4px solid rgb(0, 0, 0);
+}
+
+#job2:hover{
+    border: 4px solid rgb(0, 0, 0);
+
+}
+
+/* apply button CSS */
+.apply-button {
+    display: inline-flex;
+    padding: 0.5% 1%;
+    margin: 1% 1% 0.5% 1%;
+    background-color: #E06F1F; /* Orange color */
+    color: #000; /* Black text */
+    border: 2px solid #000; /* Black border */
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.apply-button:hover {
+    background-color: #d45704; /* Slightly darker orange on hover */
+}
+
+/* removes unwanted dotpoint for sublist heading */
+.dot {
+    list-style: none;
+}
+
+
+
+/* --------------------APPLY PAGE CSS-------------------- */
 
 /* Title and intro paragraph */
 #apply_title {
@@ -100,13 +177,10 @@ nav a:hover{
     padding: 5px;
 }
 
-
-
 /* main fieldset group sizing */
 #personal_details, #contact_information, #skills {
     width: 50%;
 }
-
 
 /* Initial dropdown menu */
 #job_menu {
@@ -115,7 +189,6 @@ nav a:hover{
     font-weight: bold;
     font-size: 1.1em;
 }
-
 
 
 /* Fieldset legend text */
@@ -160,7 +233,6 @@ form div {
 }
 
 
-
 /* CSS for reset and submit buttons */
 .form_button {
     height: 1.5em;
@@ -191,83 +263,7 @@ textarea {
 
 
 
-/* Jobs page CSS */
-#job1, #job2 {
-    background-color: #a3a8a3;
-    border: 4px solid rgb(136, 136, 136);
-    margin: 5px;
-    padding: 5px;
-}
-
-#job1:hover{
-    border: 4px solid rgb(0, 0, 0);
-}
-
-#job2:hover{
-    border: 4px solid rgb(0, 0, 0);
-
-}
-
-/* apply button CSS */
-.apply-button {
-    display: inline-flex;
-    padding: 0.5% 1%;
-    margin: 1% 1% 0.5% 1%;
-    background-color: #E06F1F; /* Orange color */
-    color: #000; /* Black text */
-    border: 2px solid #000; /* Black border */
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-.apply-button:hover {
-    background-color: #d45704; /* Slightly darker orange on hover */
-}
-
-/* removes unwanted dotpoint for sublist heading */
-.dot {
-    list-style: none;
-}
-
-
-/* CSS for aside  */
-aside {
-    float: right;
-    text-align: center;
-    margin: 2%;
-    padding: 2%;
-    width: 30%;
-    background-color: black;
-    border: 3px solid rgb(12, 12, 12);
-    border-radius: 50%;
-}
-
-aside h2 {
-    color: #E06F1F;
-}
-
-aside img {
-    border-radius: 50%;
-    width: 25%;
-}
-
-aside:hover {
-    border: 3px solid #E06F1F;
-
-}
-
-aside img:hover {
-    opacity: 50%;
-}
-
-aside p {
-    color: white;
-}
-
-
-
-/* About page CSS */
+/* --------------------ABOUT PAGE CSS-------------------- */
 #content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -463,14 +459,16 @@ area:hover + .area-tooltip { /* + is adjacent sibling combinator */
     left: 75%;
 }
 
-/* Enhancements CSS*/
+
+
+
+/* --------------------ENHACEMENTS PAGE CSS-------------------- */
 #enhancements_main {
     background-color: #a3a8a3;
     border: 4px solid rgb(136, 136, 136);
     margin: 5px;
     padding: 5px;
 }
-
 
 #enhancements_main h1 { 
     text-align: left;
@@ -484,7 +482,12 @@ area:hover + .area-tooltip { /* + is adjacent sibling combinator */
 #enhancements_main a {
     color: black;
 }
-/* Footer CSS */
+
+
+
+
+
+/* --------------------FOOTER CSS-------------------- */
 footer {
     background-color: black;
     padding-top: .5%;
