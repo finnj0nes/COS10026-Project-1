@@ -334,6 +334,10 @@ aside p {
     font-weight: bold;
 }
 
+#about-email a {
+    color: black;
+}
+
 #about-sidebar {
     text-align: center;
     flex: 0 0 39%; /* last 39% of page width */
@@ -354,7 +358,7 @@ aside p {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #c57a0a;
+    background-color: #834519;
     color: white;
     border: 2px solid #363636; 
     border-radius: 5px;

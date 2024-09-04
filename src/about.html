@@ -152,21 +152,25 @@
                 <!--radio buttons for a game-->
                 <h2>Two Truths and a Lie</h2>
                 <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-                    <label class="truth-lie-option">
-                        <input type="radio" name="truth_lie" value="option1">
-                        Finn has his ears pierced.
-                    </label>
+                    <fieldset>
+                        <legend>Guess the Lie!</legend>
+
+                        <label class="truth-lie-option">
+                            <input type="radio" name="truth_lie" value="option1">
+                            Finn has his ears pierced.
+                        </label>
+                        
+                        <label class="truth-lie-option">
+                            <input type="radio" name="truth_lie" value="option2">
+                            Alessia can juggle flaming sticks.
+                        </label>
+                        
+                        <label class="truth-lie-option">
+                            <input type="radio" name="truth_lie" value="option3">
+                            Aaron also has his ears pierced.
+                        </label>
+                    </fieldset>
                     
-                    <label class="truth-lie-option">
-                        <input type="radio" name="truth_lie" value="option2">
-                        Alessia can juggle flaming sticks.
-                    </label>
-                    
-                    <label class="truth-lie-option">
-                        <input type="radio" name="truth_lie" value="option3">
-                        Aaron also has his ears pierced.
-                    </label>
-    
                     <input type="submit" value="Submit Your Guess">
                 </form>
             </div>
