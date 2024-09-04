@@ -479,9 +479,11 @@ area:hover + .area-tooltip { /* + is adjacent sibling combinator */
 
 #enhancements_main ol {
     font-style: italic;
-    color: #32210b;
 }
 
+#enhancements_main a {
+    color: black;
+}
 /* Footer CSS */
 footer {
     background-color: black;
