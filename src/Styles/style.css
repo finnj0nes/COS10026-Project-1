@@ -16,7 +16,7 @@ header img {
 }
 
 h2 {
-    color: #E06F1F;
+    color: #834519;
 }
 
 h3 {
@@ -24,7 +24,7 @@ h3 {
 }
 
 #home {
-    background-image: url("Images/background1.jpeg");
+    background-image: url("images/background1.jpeg")
 }
 
 body {
@@ -208,6 +208,22 @@ textarea {
 
 }
 
+/* apply button CSS */
+.apply-button {
+    display: inline-flex;
+    padding: 0.5% 1%;
+    margin: 1% 1% 0.5% 1%;
+    background-color: #E06F1F; /* Orange color */
+    color: #000; /* Black text */
+    border: 2px solid #000; /* Black border */
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.apply-button:hover {
+    background-color: #d45704; /* Slightly darker orange on hover */
+}
 
 
 /* CSS for aside  */
