@@ -225,6 +225,11 @@ textarea {
     background-color: #d45704; /* Slightly darker orange on hover */
 }
 
+/* removes unwanted dotpoint for sublist heading */
+.dot {
+    list-style: none;
+}
+
 
 /* CSS for aside  */
 aside {

@@ -1,32 +1,29 @@
 <!-- apply.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="Application Form">
-  <meta name="keywords" content="Form, Application, Job, Businessk">
-  <meta name="author" content="Aaron">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Rotating Phish - Apply</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application Form">
+    <meta name="keywords" content="Form, Application, Job, Business">
+    <meta name="author" content="Aaron Sutton - 105461466">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Rotating Phish - Apply</title>
 </head>
 
 <body>
     
-    <header id="header">
+    <header>
     <!--fish banner-->
-    <img src="images/fishbanner_crop.gif" alt="GIF banner featuring koi fish swimming through a pond" title="fish banner">
-    
+    <a href="https://www.youtube.com/watch?v=dCf-TML_2Jo"> <img src="images/fishbanner_crop.gif" alt="GIF banner featuring koi fish swimming through a pond" title="fish banner"> </a>
     <!--page menu bar-->
     <nav>
         <a class="button" href="index.html">Home</a>
         <a class="button active" href="jobs.html">Positions</a>
         <a class="button" href="about.html">About Us</a>
         <a class="button" href="enhancements.html">Enhancements</a>
-
     </nav>
     </header>
-
        
 <!--section off to side displaying logo and link to about page-->
     <aside>
@@ -37,20 +34,18 @@
     
 
     <section id="apply_main">
-
+    <!-- main section -->
         <div id="apply_title">
             <h1>So you want to work at Rotating Phish?</h1>
             <p>We are delighted to hear that you are interested in applying for a job at Rotatating Phish 
-            <br> Please fill out and submit our application form below
-            <br> <br>
-            </p>
+            <br> Please fill out and submit our application form below </p>
         </div>
 
         <!--application form for all jobs-->
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
             <!-- not sure if we're supposed to use <p> tags for each label? leaving them here in case but making them easy to delete -->
             <!--fixed error, wrapped labels in their own div for layout-->
-                <div id="job_menu">
+            <div id="job_menu">
                 <label for="job_title">Job Title</label>
                 <!--drop down menu for available jobs-->
                 <select name="job_title" id="job_title" required>
@@ -64,31 +59,31 @@
                 <!--section to fill out personal details-->
                 <legend>Personal Details</legend>
                 <div class="labels">
-                <label for="first_name">First Name</label>
-                <input type="text" name="first" id="first_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20" placeholder="Tate">
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name" id="last_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20" placeholder="N. Phish">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first" id="first_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20" placeholder="Tate">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" required="required" pattern="^[a-zA-z ]+$" maxlength="20" placeholder="N. Phish">
                 </div>
 
                 <div class="labels">
-                <label for="dob">Date of Birth</label>
-                <input type="text" id="dob" name="dob" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}" placeholder="dd/mm/yyyy">
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" name="dob" required="required" pattern="\d{1,2}\/\d{1,2}\/\d{4}" placeholder="dd/mm/yyyy">
                 </div>
                 
                 <fieldset>
                     <!--radio buttons for gender-->                   
                     <legend>Gender</legend>
                     <div class="labels"> 
-                    <input type="radio" id="male" name="gender" value="male" required="required">
-                    <label for="male">Male</label> 
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>              
-                    <input type="radio" id="non-binary" name="gender" value="non-binary">
-                    <label for="non-binary">Non-binary</label>
-                    <input type="radio" id="genderfluid" name="gender" value="genderfluid">
-                    <label for="genderfluid">Genderfluid</label> 
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label> 
+                        <input type="radio" id="male" name="gender" value="male" required="required">
+                        <label for="male">Male</label> 
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>              
+                        <input type="radio" id="non-binary" name="gender" value="non-binary">
+                        <label for="non-binary">Non-binary</label>
+                        <input type="radio" id="genderfluid" name="gender" value="genderfluid">
+                        <label for="genderfluid">Genderfluid</label> 
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label> 
                     </div>
                 </fieldset>
             </fieldset>
@@ -97,29 +92,29 @@
                 <!--inputs for contact info-->
                 <legend>Contact Information</legend>
                 <div class="labels">
-                <label for="street_address">Street Address</label>
-                <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
-                <label for="suburb">Suburb/Town</label>
-                <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="Suburb">
-                
-                <label for="state">State</label>
-                <select name="state" id="state" required>
-                    <option value="" selected disabled>Please select</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="ACT">ACT</option>
-                    <option value="NT">NT</option>
-                </select>
-            </div>
+                    <label for="street_address">Street Address</label>
+                    <input type="text" name="street_address" id="street_address" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="123 Street St">
+                    <label for="suburb">Suburb/Town</label>
+                    <input type="text" name="suburb" id="suburb" required="required" pattern="^[a-zA-z0-9- ]+$" maxlength="40" placeholder="Suburb">
+                    
+                    <label for="state">State</label>
+                    <select name="state" id="state" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="ACT">ACT</option>
+                        <option value="NT">NT</option>
+                    </select>
+                </div>
 
                 <div class="labels">
-                <label for="email_address">Email Address</label>
-                <input type="email" id="email_address" name="email_address" required="required" placeholder="example@email.com">
-                <label for="phone">Phone number</label>
-                <input type="text" id="phone" name="phone" required="required" placeholder="0303 030 030" pattern="[0-9 ]+" minlength="8" maxlength="12">
+                    <label for="email_address">Email Address</label>
+                    <input type="email" id="email_address" name="email_address" required="required" placeholder="example@email.com">
+                    <label for="phone">Phone number</label>
+                    <input type="text" id="phone" name="phone" required="required" placeholder="0303 030 030" pattern="[0-9 ]+" minlength="8" maxlength="12">
                 </div>
 
             </fieldset>
@@ -128,24 +123,23 @@
                 <legend>Skill list</legend>
                 <!--check boxes for desireable skills-->
                 <div class="labels">
-                <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
-                <label for="skill1">Hard-working</label>
-                <input type="checkbox" id="skill2" name="skills[]" value="productive" required="required">
-                <label for="skill2">Productive</label>
-                <input type="checkbox" id="skill3" name="skills[]" value="idea_driven" required="required">
-                <label for="skill3">Idea-driven</label> 
-                <input type="checkbox" id="skill4" name="skills[]" value="collaborative" required="required">
-                <label for="skill4">Collaborative</label> 
-                <input type="checkbox" id="other_skills" name="skills[]" value="other_skills" >
-                <label for="other_skills">Other skills...</label>
-                
+                    <input type="checkbox" id="skill1" name="skills[]" value="hard_working" required="required">
+                    <label for="skill1">Hard-working</label>
+                    <input type="checkbox" id="skill2" name="skills[]" value="productive" required="required">
+                    <label for="skill2">Productive</label>
+                    <input type="checkbox" id="skill3" name="skills[]" value="idea_driven" required="required">
+                    <label for="skill3">Idea-driven</label> 
+                    <input type="checkbox" id="skill4" name="skills[]" value="collaborative" required="required">
+                    <label for="skill4">Collaborative</label> 
+                    <input type="checkbox" id="other_skills" name="skills[]" value="other_skills" >
+                    <label for="other_skills">Other skills...</label>
                 </div>
 
                 <!-- text input for other skills -->
                 <div id="skillbox">
-                <label for="other_skills_desc">Other skills</label>
-                <br>
-                <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="40"></textarea>
+                    <label for="other_skills_desc">Other skills</label>
+                    <br>
+                    <textarea name="other_skills_desc" id="other_skills_desc" placeholder="Describe your skills here" rows="10" cols="40"></textarea>
                 </div>
 
             </fieldset>
@@ -153,8 +147,7 @@
             <!--form buttons to submit or reset form-->
             <input type="submit" value="Apply" class="form_button">
             <input type="reset" value="Reset Form" class="form_button">
-            
-
+    
         </form>
     </section>
     
@@ -163,7 +156,7 @@
         <p><a id="inspo" href="Images/inspiration.jpg">Our Inspiration</a>
         <a id="email" href="mailto:rotatingphish@gmail.com">Email Us!</a></p>
         <p>&copy; 2024 Rotating Phish. All Rights Reserved.</p>
-        <img id="logo" src="Images/logo.gif" alt="Rotating Phish logo: a 3D rotating cube with a fish in it" title="logo">
+        <a href="https://tenor.com/view/some_failure-fish-fish-images-fishy-spin-gif-27668754"> <img id="logo" src="Images/logo.gif" alt="Rotating Phish logo: a 3D rotating cube with a fish in it" title="logo"> </a>
     </footer>
 </body>
 </html>
