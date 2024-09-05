@@ -324,6 +324,7 @@ textarea {
     padding: 20px;
     margin-top: 10px; /* Spaced from group info section */
     max-width: 100%;
+    margin: 0 auto;
 }
 
 #timetable table {
