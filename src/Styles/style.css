@@ -120,6 +120,7 @@ aside p {
     background-image: url("images/background.jpeg");
     background-repeat: no-repeat;
     background-size: 100vw 200vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #indexTitle {
