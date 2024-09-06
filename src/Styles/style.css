@@ -131,6 +131,14 @@ aside p {
     color: whitesmoke;
 }
 
+#videoLink {
+    color: whitesmoke;
+}
+
+#videoLink :hover {
+    color: #E06F1F;
+}
+
 
 
 /* --------------------JOBS PAGE CSS-------------------- */
