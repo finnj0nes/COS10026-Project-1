@@ -112,17 +112,19 @@ nav a:hover{
     color: white;
 }
 
-.job_1_photo img {
+.job_photo img {
     width: 30%;
     height: 30%;
-    float: right;
+    border-radius: 20px;
+    border: 1px solid black;
+
 
 }
 
-.job_1_photo {
-    border: px1 solid black;
-}
+.job_photo {
 
+    display: flex;
+}
 
 
 
