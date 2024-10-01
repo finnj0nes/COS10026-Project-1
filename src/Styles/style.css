@@ -132,23 +132,37 @@ nav a:hover{
 #home {
     background-image: url("images/background.jpeg");
     background-repeat: no-repeat;
-    background-size: 100vw 200vh;
+    background-size: 200vw 200vh;
     background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
 }
 
-#indexTitle {
+#indextitle {
     color: #E06F1F;
 }
 
-.indexText {
-    color: whitesmoke;
+#indextext {
+    background-color: whitesmoke;
+    opacity: 50%;
+    border: 1px solid rgb(136, 136, 136);
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 47px;
+    text-align: center;
+    float: center;
+    width: 50%;
+    line-height: 150%;
 }
 
-#videoLink {
-    color: whitesmoke;
+#videolink {
+    color: darkslategray;
 }
 
-#videoLink:hover {
+#videolink:hover {
     color: #E06F1F;
 }
 
@@ -527,6 +541,7 @@ footer {
     padding-bottom: 1.3%;
     padding-left: 1.1%;
     padding-right: 1.1%;
+    margin-top: auto;
 }
 
 footer p {
