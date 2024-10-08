@@ -21,7 +21,7 @@ body p {
     color: #000000;
 }
 
-#fixfoot {
+#allfooters {
     position: relative;
     min-height: 200vh;
     display: flex;
