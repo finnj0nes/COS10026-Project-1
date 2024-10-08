@@ -21,6 +21,13 @@ body p {
     color: #000000;
 }
 
+#fixfoot {
+    position: relative;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* --------------------HEADER CSS-------------------- */
 header img {
     width: 100%;
